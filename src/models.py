@@ -40,10 +40,10 @@ class Favorites(Base):
     user_id = Column(Integer, ForeignKey('user.id'))
     users = relationship(Users)
 
-    planet_id = Column(Integer, ForeignKey('planet.id'))
+    planet_id = Column(Integer, ForeignKey('planets.id'))
     planets = relationship(Planets)
 
-    character_id = Column(Integer, ForeignKey('character.id'))
+    character_id = Column(Integer, ForeignKey('characters.id'))
     characters = relationship(Characters)
     
 
